@@ -1,0 +1,168 @@
+﻿<div style="margin:5%">
+    <div style="margin-left:40%">
+        <button type="button" class="btn btn-default text-center" ng-click="closeInsert()">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="saveInsert()">Save</button>
+    </div>
+    <div class="">
+        <div class="form-group row">
+            <label for="example-text-input" class="col-2 col-form-label">Date of Auto de Fé</label>
+            <div class="col-10">                
+                <input class="form-control" type="date" style="width:155px" ng-model="details.DateOfAuto">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-search-input" class="col-2 col-form-label">Tribunal</label>
+            <div class="col-10">
+                <input ng-model="details.Tribunal" ID="txtTribunal" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-email-input" class="col-2 col-form-label">Type of Auto</label>
+            <div class="col-10">
+                <select class="form-control" id="selTypeofAuto" ng-model="details.TypeOfAuto">
+                    <option>Publico</option>
+                    <option>Particular</option>
+                </select>
+            </div>
+        </div>
+        <!--<div class="form-group row">
+        <label for="example-url-input" class="col-2 col-form-label">Location of Auto</label>
+        <div class="col-10">
+            <input ng-model="details.LocationOfAuto" ID="txtLocationofAuto" class="form-control" />
+
+        </div>
+    </div>-->
+        <div class="form-group row">
+            <label for="example-tel-input" class="col-2 col-form-label">Name</label>
+            <div class="col-10">
+                <input ng-model="details.Name" ID="txtName" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-tel-input" class="col-2 col-form-label">Surname</label>
+            <div class="col-10">
+                <input ng-model="details.Surname" ID="txtSurname" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-password-input" class="col-2 col-form-label">Aliases</label>
+            <div class="col-10">
+                <input ng-model="details.Aliases" ID="txtAliases" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-time-input" class="col-2 col-form-label">Location of Birth</label>
+            <div class="col-10">
+                <input ng-model="details.LocationOfBirth" ID="txtLocationOfBirth" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-time-input" class="col-2 col-form-label">Bishopric of Birth</label>
+            <div class="col-10">
+                <input ng-model="details.BishopricOfBirth" ID="txtBishopricOfBirth" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-color-input" class="col-2 col-form-label">Residence</label>
+            <div class="col-10">
+                <input ng-model="details.Residence" ID="txtResidence" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-time-input" class="col-2 col-form-label">Bishopric of Residence</label>
+            <div class="col-10">
+                <input ng-model="details.BishopricOfResidence" ID="txtBishopricOfResidence" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-number-input" class="col-2 col-form-label">Sex</label>
+            <div class="col-10">
+                <select class="form-control" id="selGender" ng-model="details.Sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+        <!--<div class="form-group row">
+        <label for="example-password-input" class="col-2 col-form-label">Genealogical Origin</label>
+        <div class="col-10">
+            <input ng-model="details.GenealogicalOrigin" ID="txtGenealogicalOrigin" class="form-control" />
+
+        </div>
+    </div>-->
+        <div class="form-group row">
+            <label for="example-datetime-local-input" class="col-2 col-form-label">Age</label>
+            <div class="col-10">
+                <input class="form-control" id="DateOfBirth" style="width:155px" ng-model="details.Age">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-date-input" class="col-2 col-form-label">Personal Status</label>
+            <div class="col-10">
+                <select class="form-control" id="selPersonalStatus" ng-model="details.PersonalStatus">
+                    <option> </option>
+                    <option>Married</option>
+                    <option>Married X2</option>
+                    <option>Single</option>
+                    <option>Widow</option>
+                    <option>Widower</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-month-input" class="col-2 col-form-label">Occupation</label>
+            <div class="col-10">
+                <input ng-model="details.Occupation" ID="txtOccupation" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-week-input" class="col-2 col-form-label">Family ties</label>
+            <div class="col-10">
+                <input ng-model="details.FamilyTies" ID="txtFamilyTies" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-color-input" class="col-2 col-form-label">Type of Crime</label>
+            <div class="col-10">
+                <input ng-model="details.TypeOfCrime" ID="txtTypeOfCrime" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-color-input" class="col-2 col-form-label">Sentence</label>
+            <div class="col-10">
+                <input ng-model="details.Sentence" ID="txtSentence" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-time-input" class="col-2 col-form-label">Punishment</label>
+            <div class="col-10">
+                <input ng-model="details.Punishment" ID="txtPunishment" class="form-control" />
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="example-color-input" class="col-2 col-form-label">Additional Information</label>
+            <div class="col-10">
+                <input ng-model="details.AdditionalInformation" ID="txtAdditionalInformation" class="form-control" />
+
+            </div>
+        </div>
+
+    </div>
+    <div style="margin-left:40%">
+        <button type="button" class="btn btn-default text-center" ng-click="closeInsert()">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="saveInsert()">Save</button>
+    </div>
+</div>
+
